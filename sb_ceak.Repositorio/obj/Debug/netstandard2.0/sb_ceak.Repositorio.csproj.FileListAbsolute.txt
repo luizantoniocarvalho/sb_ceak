@@ -1,0 +1,9 @@
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\bin\Debug\netstandard2.0\sb_ceak.Repositorio.deps.json
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\bin\Debug\netstandard2.0\sb_ceak.Repositorio.dll
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\bin\Debug\netstandard2.0\sb_ceak.Repositorio.pdb
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.csproj.AssemblyReference.cache
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.csproj.CoreCompileInputs.cache
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.AssemblyInfoInputs.cache
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.AssemblyInfo.cs
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.dll
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.pdb

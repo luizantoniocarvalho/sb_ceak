@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "VCgBuF7NIPAnmf7WxBscnzYVPiSHiNhe3l6FvOm42JNCUzL+j5FfbNjOXs9wgd/SQG7H4daUJyYsfTdMXZZdLg==",
+  "success": true,
+  "projectFilePath": "C:\\Projetos\\SB_CEAK\\sb_ceak.Dominio\\sb_ceak.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

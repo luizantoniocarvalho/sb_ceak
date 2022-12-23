@@ -1,0 +1,9 @@
+C:\Projetos\SB_CEAK\sb_ceak.Dominio\bin\Debug\netstandard2.0\sb_ceak.Dominio.deps.json
+C:\Projetos\SB_CEAK\sb_ceak.Dominio\bin\Debug\netstandard2.0\sb_ceak.Dominio.dll
+C:\Projetos\SB_CEAK\sb_ceak.Dominio\bin\Debug\netstandard2.0\sb_ceak.Dominio.pdb
+C:\Projetos\SB_CEAK\sb_ceak.Dominio\obj\Debug\netstandard2.0\sb_ceak.Dominio.csproj.AssemblyReference.cache
+C:\Projetos\SB_CEAK\sb_ceak.Dominio\obj\Debug\netstandard2.0\sb_ceak.Dominio.csproj.CoreCompileInputs.cache
+C:\Projetos\SB_CEAK\sb_ceak.Dominio\obj\Debug\netstandard2.0\sb_ceak.Dominio.AssemblyInfoInputs.cache
+C:\Projetos\SB_CEAK\sb_ceak.Dominio\obj\Debug\netstandard2.0\sb_ceak.Dominio.AssemblyInfo.cs
+C:\Projetos\SB_CEAK\sb_ceak.Dominio\obj\Debug\netstandard2.0\sb_ceak.Dominio.dll
+C:\Projetos\SB_CEAK\sb_ceak.Dominio\obj\Debug\netstandard2.0\sb_ceak.Dominio.pdb
