@@ -3,7 +3,7 @@ using System;
 
 namespace sb_ceak.Dominio.Entidade
 {
-    public class Autores
+    public class Autores : Entidades
     {
         public int autor_id                         { get; set; }
         public int tipo_autor_id                    { get; set; }
@@ -27,5 +27,12 @@ namespace sb_ceak.Dominio.Entidade
             get { return tipo_autor_id == (int)TipoAutores.Psicográfico; }
         }
 
+        public override void Validate()
+        {
+            LimparMensagemValidacao();
+
+            if (string.IsNullOrEmpty(ds_Nome_Autor))
+                AdicionarMensagemValidacao("Nome do Autor é campo obrigatório.");
+        }
     }
 }

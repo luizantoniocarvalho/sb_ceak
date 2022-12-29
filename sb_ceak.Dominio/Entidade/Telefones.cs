@@ -3,7 +3,7 @@ using System;
 
 namespace sb_ceak.Dominio.Entidade
 {
-    public class Telefones
+    public class Telefones : Entidades
     {
         public int telefone_id                  { get; set; }
         public int tipo_telefone_id             { get; set; }
@@ -28,6 +28,14 @@ namespace sb_ceak.Dominio.Entidade
         public bool TipoComercial
         {
             get { return tipo_telefone_id == (int)TipoTelefones.Comercial; }
+        }
+
+        public override void Validate()
+        {
+            LimparMensagemValidacao();
+
+            if (string.IsNullOrEmpty(ds_Numero_Telefone))
+                AdicionarMensagemValidacao("Número de Telefone é campo obrigatório.");
         }
     }
 }

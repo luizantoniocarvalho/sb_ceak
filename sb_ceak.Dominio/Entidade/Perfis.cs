@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace sb_ceak.Dominio.Entidade
 {
-    public class Perfis
+    public class Perfis : Entidades
     {
         public int perfil_id                    { get; set; }
         public string ds_Nome_Perfil            { get; set; }
@@ -17,5 +17,13 @@ namespace sb_ceak.Dominio.Entidade
         /// Um perfil pode ter uma ou muitas funções.
         /// </summary>
         public ICollection<Funcoes> Funcao      { get; set; }
+
+        public override void Validate()
+        {
+            LimparMensagemValidacao();
+
+            if (string.IsNullOrEmpty(ds_Nome_Perfil))
+                AdicionarMensagemValidacao("Nome do Perfil é campo obrigatório.");
+        }
     }
 }

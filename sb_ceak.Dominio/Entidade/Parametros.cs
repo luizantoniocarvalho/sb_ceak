@@ -2,7 +2,7 @@
 
 namespace sb_ceak.Dominio.Entidade
 {
-    public class Parametros
+    public class Parametros : Entidades
     {
         public int parametro_id                     { get; set; }
         public int telefone_id                      { get; set; }
@@ -20,5 +20,10 @@ namespace sb_ceak.Dominio.Entidade
         public DateTime dt_Data_Criacao             { get; set; }
         public int alterou_Registro_id              { get; set; }
         public DateTime dt_Data_Alteracao           { get; set; }
+
+        public override void Validate()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

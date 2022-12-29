@@ -3,7 +3,7 @@ using System;
 
 namespace sb_ceak.Dominio.Entidade
 {
-    public class Obras
+    public class Obras : Entidades
     {
         public int obra_id                          { get; set; }
         public int tipo_obra_id                     { get; set; }
@@ -45,6 +45,14 @@ namespace sb_ceak.Dominio.Entidade
         public bool Prazo30Dias
         {
             get { return prazo_id == (int)Prazos.Dias_30; }
+        }
+
+        public override void Validate()
+        {
+            LimparMensagemValidacao();
+
+            if (string.IsNullOrEmpty(ds_Nome_Obra))
+                AdicionarMensagemValidacao("Nome da Obra é campo obrigatório.");
         }
     }
 }

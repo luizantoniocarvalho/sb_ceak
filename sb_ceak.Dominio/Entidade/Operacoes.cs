@@ -2,7 +2,7 @@
 
 namespace sb_ceak.Dominio.Entidade
 {
-    public class Operacoes
+    public class Operacoes : Entidades
     {
         public int operacao_id                  { get; set; }
         public string ds_Nome_Operacao          { get; set; }
@@ -11,5 +11,13 @@ namespace sb_ceak.Dominio.Entidade
         public DateTime dt_Data_Cadastro        { get; set; }
         public int alterou_Registro_id          { get; set; }
         public DateTime dt_Data_Alteracao       { get; set; }
+
+        public override void Validate()
+        {
+            LimparMensagemValidacao();
+
+            if (string.IsNullOrEmpty(ds_Nome_Operacao))
+                AdicionarMensagemValidacao("Nome da Operação é campo obrigatório.");
+        }
     }
 }

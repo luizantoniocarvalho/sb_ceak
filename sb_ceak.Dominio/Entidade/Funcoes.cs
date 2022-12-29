@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace sb_ceak.Dominio.Entidade
 {
-    public class Funcoes
+    public class Funcoes : Entidades
     {
         public int funcao_id                    { get; set; }
         public string ds_Nome_Funcao            { get; set; }
@@ -17,5 +17,13 @@ namespace sb_ceak.Dominio.Entidade
         /// Uma função pode ter um ou muitas operações.
         /// </summary>
         public ICollection<Operacoes> Operacao  { get; set; }
+
+        public override void Validate()
+        {
+            LimparMensagemValidacao();
+
+            if (string.IsNullOrEmpty(ds_Nome_Funcao))
+                AdicionarMensagemValidacao("Nome da Função é campo obrigatório.");
+        }
     }
 }

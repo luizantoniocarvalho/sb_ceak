@@ -3,7 +3,7 @@ using System;
 
 namespace sb_ceak.Dominio.Entidade
 {
-    public class EmprestimoDevolucoes
+    public class EmprestimoDevolucoes : Entidades
     {
         public int emp_dev_id                   { get; set; }
         public int tipo_obra_id                 { get; set; }
@@ -21,6 +21,11 @@ namespace sb_ceak.Dominio.Entidade
         public bool TipoDVD
         {
             get { return tipo_obra_id == (int)TipoObras.DVD; }
+        }
+
+        public override void Validate()
+        {
+            throw new NotImplementedException();
         }
     }
 }
