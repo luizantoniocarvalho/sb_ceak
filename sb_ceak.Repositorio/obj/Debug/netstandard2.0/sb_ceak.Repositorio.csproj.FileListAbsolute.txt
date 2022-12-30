@@ -7,3 +7,6 @@ C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Reposit
 C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.AssemblyInfo.cs
 C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.dll
 C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.pdb
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\bin\Debug\netstandard2.0\sb_ceak.Dominio.dll
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\bin\Debug\netstandard2.0\sb_ceak.Dominio.pdb
+C:\Projetos\SB_CEAK\sb_ceak.Repositorio\obj\Debug\netstandard2.0\sb_ceak.Repositorio.csproj.CopyComplete

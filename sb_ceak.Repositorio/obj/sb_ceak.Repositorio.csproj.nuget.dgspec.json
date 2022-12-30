@@ -4,6 +4,60 @@
     "C:\\Projetos\\SB_CEAK\\sb_ceak.Repositorio\\sb_ceak.Repositorio.csproj": {}
   },
   "projects": {
+    "C:\\Projetos\\SB_CEAK\\sb_ceak.Dominio\\sb_ceak.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Projetos\\SB_CEAK\\sb_ceak.Dominio\\sb_ceak.Dominio.csproj",
+        "projectName": "sb_ceak.Dominio",
+        "projectPath": "C:\\Projetos\\SB_CEAK\\sb_ceak.Dominio\\sb_ceak.Dominio.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\Projetos\\SB_CEAK\\sb_ceak.Dominio\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
     "C:\\Projetos\\SB_CEAK\\sb_ceak.Repositorio\\sb_ceak.Repositorio.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -30,7 +84,11 @@
         "frameworks": {
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Projetos\\SB_CEAK\\sb_ceak.Dominio\\sb_ceak.Dominio.csproj": {
+                "projectPath": "C:\\Projetos\\SB_CEAK\\sb_ceak.Dominio\\sb_ceak.Dominio.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

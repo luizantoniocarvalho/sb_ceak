@@ -25,6 +25,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "sb_ceak.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/sb_ceak.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sb_ceak.Dominio.dll": {}
+        }
       }
     }
   },
@@ -172,11 +182,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "sb_ceak.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../sb_ceak.Dominio/sb_ceak.Dominio.csproj",
+      "msbuildProject": "../sb_ceak.Dominio/sb_ceak.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "NETStandard.Library >= 2.0.3",
+      "sb_ceak.Dominio >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -209,7 +225,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projetos\\SB_CEAK\\sb_ceak.Dominio\\sb_ceak.Dominio.csproj": {
+              "projectPath": "C:\\Projetos\\SB_CEAK\\sb_ceak.Dominio\\sb_ceak.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
