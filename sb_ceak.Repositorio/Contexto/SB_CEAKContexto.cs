@@ -17,5 +17,10 @@ namespace sb_ceak.Repositorio.Contexto
         public DbSet<Reservas> Reserva                              { get; set; }
         public DbSet<Telefones> Telefone                            { get; set; }
 
+        public SB_CEAKContexto(DbContextOptions options) : base(options)
+        {
+
+        }
+
     }
 }
