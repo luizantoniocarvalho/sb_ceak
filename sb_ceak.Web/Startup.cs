@@ -27,7 +27,7 @@ namespace sb_ceak.Web
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            var connectionString = Configuration.GetConnectionString("MyPostgreConnection");
+            var connectionString = Configuration.GetConnectionString("sb_ceak");
 
             services.AddDbContext<SB_CEAKContexto>(option => option.UseSqlServer(connectionString,
                                                     m => m.MigrationsAssembly("sb_ceak.Repositorio")));
