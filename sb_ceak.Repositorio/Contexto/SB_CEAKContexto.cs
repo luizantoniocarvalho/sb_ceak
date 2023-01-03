@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using sb_ceak.Dominio.Entidade;
+using sb_ceak.Repositorio.Config;
 
 namespace sb_ceak.Repositorio.Contexto
 {
@@ -22,5 +23,22 @@ namespace sb_ceak.Repositorio.Contexto
 
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            //Classes de mapeamento aqui...
+            modelBuilder.ApplyConfiguration(new AutoresConfiguration());
+            modelBuilder.ApplyConfiguration(new EmprestimoDevolucoesConfiguration());
+            modelBuilder.ApplyConfiguration(new FuncoesConfiguration());
+            modelBuilder.ApplyConfiguration(new LogsConfiguration());
+            modelBuilder.ApplyConfiguration(new ObrasConfiguration());
+            modelBuilder.ApplyConfiguration(new OperacoesConfiguration());
+            modelBuilder.ApplyConfiguration(new ParametrosConfiguration());
+            modelBuilder.ApplyConfiguration(new PerfisConfiguration());
+            modelBuilder.ApplyConfiguration(new PessoasConfiguration());
+            modelBuilder.ApplyConfiguration(new ReservasConfiguration());
+            modelBuilder.ApplyConfiguration(new TelefonesConfiguration());
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
