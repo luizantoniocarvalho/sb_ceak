@@ -8,6 +8,8 @@ namespace sb_ceak.Dominio.Entidade
     {
         public int funcao_id                    { get; set; }
         public string ds_Nome_Funcao            { get; set; }
+        public int perfil_id                    { get; set; }
+        public virtual Perfis Perfil            { get; set; }
         public bool in_Situacao_Registro        { get; set; }
         public int criou_Registro_id            { get; set; }
         public DateTime dt_Data_Criacao         { get; set; }
@@ -17,7 +19,7 @@ namespace sb_ceak.Dominio.Entidade
         /// <summary>
         /// Uma função pode ter um ou muitas operações.
         /// </summary>
-        public virtual ICollection<Associa_Perf_Func_Oper> Associa_Perf_Func_Opers  { get; set; }
+        public virtual ICollection<Operacoes> Operacao  { get; set; }
 
         public override void Validate()
         {

@@ -6,6 +6,8 @@ namespace sb_ceak.Dominio.Entidade
     {
         public int operacao_id                  { get; set; }
         public string ds_Nome_Operacao          { get; set; }
+        public int funcao_id                    { get; set; }
+        public virtual Funcoes Funcao           { get; set; }
         public bool in_Situacao_Registro        { get; set; }
         public int criou_Registro_id            { get; set; }
         public DateTime dt_Data_Criacao         { get; set; }

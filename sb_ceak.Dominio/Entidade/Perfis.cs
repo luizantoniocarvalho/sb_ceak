@@ -16,7 +16,7 @@ namespace sb_ceak.Dominio.Entidade
         /// <summary>
         /// Um perfil pode ter uma ou muitas funções.
         /// </summary>
-        public ICollection<Funcoes> Funcao      { get; set; }
+        public virtual ICollection<Funcoes> Funcao  { get; set; }
 
         public override void Validate()
         {
