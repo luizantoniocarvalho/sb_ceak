@@ -5,7 +5,7 @@ namespace sb_ceak.Dominio.Entidade
 {
     public abstract class Entidades
     {
-        public List<string> _mensgensValidacao { get; set; }
+        private List<string> _mensgensValidacao { get; set; }
         private List<string> mensagemValidacao
         {
             get { return _mensgensValidacao ?? (_mensgensValidacao = new List<string>()); }

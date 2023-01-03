@@ -8,7 +8,7 @@ namespace sb_ceak.Dominio.Entidade
         public string ds_Nome_Operacao          { get; set; }
         public bool in_Situacao_Registro        { get; set; }
         public int criou_Registro_id            { get; set; }
-        public DateTime dt_Data_Cadastro        { get; set; }
+        public DateTime dt_Data_Criacao         { get; set; }
         public int alterou_Registro_id          { get; set; }
         public DateTime dt_Data_Alteracao       { get; set; }
 

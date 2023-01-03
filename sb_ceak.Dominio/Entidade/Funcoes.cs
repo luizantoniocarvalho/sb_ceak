@@ -1,4 +1,5 @@
-﻿using System;
+﻿using sb_ceak.Dominio.Associação;
+using System;
 using System.Collections.Generic;
 
 namespace sb_ceak.Dominio.Entidade
@@ -16,7 +17,7 @@ namespace sb_ceak.Dominio.Entidade
         /// <summary>
         /// Uma função pode ter um ou muitas operações.
         /// </summary>
-        public ICollection<Operacoes> Operacao  { get; set; }
+        public virtual ICollection<Associa_Perf_Func_Oper> Associa_Perf_Func_Opers  { get; set; }
 
         public override void Validate()
         {

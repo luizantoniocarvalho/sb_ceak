@@ -29,8 +29,10 @@ namespace sb_ceak.Web
 
             var connectionString = Configuration.GetConnectionString("sb_ceak");
 
-            services.AddDbContext<SB_CEAKContexto>(option => option.UseSqlServer(connectionString,
-                                                    m => m.MigrationsAssembly("sb_ceak.Repositorio")));
+            services.AddDbContext<SB_CEAKContexto>(option => 
+                                                    option.UseLazyLoadingProxies()
+                                                    .UseSqlServer(connectionString,
+                                                            m => m.MigrationsAssembly("sb_ceak.Repositorio")));
 
 
             // In production, the Angular files will be served from this directory
