@@ -1,4 +1,5 @@
 {
-  "SqlServerConnection": "",
-  "sb_ceak": "Host=127.0.0.1; Port=5432; Database=SBCEAK; User Id=postgres; Password=bingo"
-}
+  "ConnectionStrings": {
+    "sb_ceak": "Host=127.0.0.1; Port=5432; Database=SBCEAK; User Id=postgres; Password=bingo"
+  } 
+  }

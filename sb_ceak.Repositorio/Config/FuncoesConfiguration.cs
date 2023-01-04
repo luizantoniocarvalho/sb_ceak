@@ -39,6 +39,10 @@ namespace sb_ceak.Repositorio.Config
                 .Property(f => f.dt_Data_Alteracao)
                 .HasColumnType("timestamp with time zone");
 
+            builder
+                .HasMany(op => op.Operacao)
+                .WithOne(f => f.Funcao);
+
             //builder.Property(a => a.Pessoas)
         }
     }

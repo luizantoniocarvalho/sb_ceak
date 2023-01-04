@@ -7,7 +7,6 @@ namespace sb_ceak.Dominio.Associação
         public int associar_perf_func_opera_id      { get; set; }
         public int perfil_id                        { get; set; }
         public int funcao_id                        { get; set; }
-        public virtual Funcoes Funcao               { get; set; }
         public int operacao_id                      { get; set; }
     }
 }
