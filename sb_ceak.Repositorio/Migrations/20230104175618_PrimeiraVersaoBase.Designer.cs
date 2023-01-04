@@ -2,30 +2,29 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using sb_ceak.Repositorio.Contexto;
 
 namespace sb_ceak.Repositorio.Migrations
 {
     [DbContext(typeof(SB_CEAKContexto))]
-    [Migration("20230104142108_PrimeiraVersaoBase")]
+    [Migration("20230104175618_PrimeiraVersaoBase")]
     partial class PrimeiraVersaoBase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
+                .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn)
                 .HasAnnotation("ProductVersion", "2.2.3-servicing-35854")
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Autores", b =>
                 {
                     b.Property<int>("autor_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("alterou_Registro_id")
                         .HasColumnType("integer");
@@ -58,8 +57,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.EmprestimoDevolucoes", b =>
                 {
                     b.Property<int>("emp_dev_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("dt_Data_Devolucao")
                         .HasColumnType("timestamp with time zone");
@@ -87,8 +85,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Funcoes", b =>
                 {
                     b.Property<int>("funcao_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("alterou_Registro_id")
                         .HasColumnType("integer");
@@ -122,8 +119,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Logs", b =>
                 {
                     b.Property<int>("log_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<string>("ds_Log_Realizado")
                         .IsRequired()
@@ -144,8 +140,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Obras", b =>
                 {
                     b.Property<int>("obra_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("alterou_Registro_id")
                         .HasColumnType("integer");
@@ -225,8 +220,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Operacoes", b =>
                 {
                     b.Property<int>("operacao_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("alterou_Registro_id")
                         .HasColumnType("integer");
@@ -260,8 +254,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Parametros", b =>
                 {
                     b.Property<int>("parametro_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("alterou_Registro_id")
                         .HasColumnType("integer");
@@ -332,8 +325,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Perfis", b =>
                 {
                     b.Property<int>("perfil_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("alterou_Registro_id")
                         .HasColumnType("integer");
@@ -363,8 +355,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Pessoas", b =>
                 {
                     b.Property<int>("pessoa_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("alterou_Registro_id")
                         .HasColumnType("integer");
@@ -426,8 +417,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Reservas", b =>
                 {
                     b.Property<int>("reserva_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<DateTime>("dt_Data_Reserva")
                         .HasColumnType("timestamp with time zone");
@@ -446,8 +436,7 @@ namespace sb_ceak.Repositorio.Migrations
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Telefones", b =>
                 {
                     b.Property<int>("telefone_id")
-                        .ValueGeneratedOnAdd()
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .ValueGeneratedOnAdd();
 
                     b.Property<int>("alterou_Registro_id")
                         .HasColumnType("integer");

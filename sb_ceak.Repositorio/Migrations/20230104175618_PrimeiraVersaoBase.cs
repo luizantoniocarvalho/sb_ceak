@@ -1,6 +1,6 @@
 ﻿using System;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
+using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 namespace sb_ceak.Repositorio.Migrations
 {
@@ -13,7 +13,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     autor_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     tipo_autor_id = table.Column<int>(type: "integer", nullable: false),
                     ds_Nome_Autor = table.Column<string>(type: "character", maxLength: 200, nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
@@ -32,7 +32,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     emp_dev_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     tipo_obra_id = table.Column<int>(type: "integer", nullable: false),
                     pessoa_id = table.Column<int>(type: "integer", nullable: false),
                     obra_id = table.Column<int>(type: "integer", nullable: false),
@@ -50,7 +50,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     log_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     pessoa_id = table.Column<int>(type: "integer", nullable: false),
                     dt_Data_Log = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     ds_Log_Realizado = table.Column<string>(type: "character", maxLength: 200, nullable: false)
@@ -65,7 +65,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     obra_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     tipo_obra_id = table.Column<int>(type: "integer", nullable: false),
                     autor_id = table.Column<int>(type: "integer", nullable: false),
                     prazo_id = table.Column<int>(type: "integer", nullable: false),
@@ -97,7 +97,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     parametro_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     telefone_id = table.Column<int>(type: "integer", nullable: false),
                     ds_Nome_Parametro = table.Column<string>(type: "character", maxLength: 200, nullable: false),
                     ds_CNPJ_Parametro = table.Column<string>(type: "character", maxLength: 20, nullable: false),
@@ -124,7 +124,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     perfil_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     ds_Nome_Perfil = table.Column<string>(type: "character", maxLength: 100, nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
                     criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
@@ -142,7 +142,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     pessoa_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     perfil_id = table.Column<int>(type: "integer", nullable: false),
                     telefone_id = table.Column<int>(type: "integer", nullable: false),
                     ds_Nome_Pessoa = table.Column<string>(type: "character", maxLength: 200, nullable: false),
@@ -168,7 +168,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     reserva_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     pessoa_id = table.Column<int>(type: "integer", nullable: false),
                     obra_id = table.Column<int>(type: "integer", nullable: false),
                     dt_Data_Reserva = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
@@ -183,7 +183,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     telefone_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     tipo_telefone_id = table.Column<int>(type: "integer", nullable: false),
                     ds_DDD_Telefone = table.Column<string>(type: "character", maxLength: 10, nullable: false),
                     ds_Numero_Telefone = table.Column<string>(type: "character", maxLength: 10, nullable: false),
@@ -203,7 +203,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     funcao_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     ds_Nome_Funcao = table.Column<string>(type: "character", maxLength: 100, nullable: false),
                     perfil_id = table.Column<int>(nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
@@ -228,7 +228,7 @@ namespace sb_ceak.Repositorio.Migrations
                 columns: table => new
                 {
                     operacao_id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     ds_Nome_Operacao = table.Column<string>(type: "character", maxLength: 100, nullable: false),
                     funcao_id = table.Column<int>(nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),

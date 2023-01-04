@@ -115,6 +115,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Pomelo.EntityFrameworkCore.Lolita.PostgreSQL": {
               "target": "Package",
               "version": "[1.0.0, )"

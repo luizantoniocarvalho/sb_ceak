@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "f2Wuenrw7mvY/DabvgxVo98EsT944r40MMDcy0ZIC5BbwoYfr5T7DYCrAENFEYnhrpp0/blixUDboAsa1qhX/A==",
+  "dgSpecHash": "BNDVuRTyfGRIs/CHTLVfs+Ov33LMSqBiS5I/o5TGQnBh3xufwBlN1NkmoWrckhAr9CKdXp9E6irvJm/9iBhZkg==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\SB_CEAK\\sb_ceak.Repositorio\\sb_ceak.Repositorio.csproj",
   "expectedPackageFiles": [
@@ -26,6 +26,8 @@
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\npgsql\\4.0.4\\npgsql.4.0.4.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\2.2.0\\npgsql.entityframeworkcore.postgresql.2.2.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\pomelo.entityframeworkcore.lolita\\1.0.0\\pomelo.entityframeworkcore.lolita.1.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\pomelo.entityframeworkcore.lolita.postgresql\\1.0.0\\pomelo.entityframeworkcore.lolita.postgresql.1.0.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
@@ -81,7 +83,8 @@
     "C:\\Users\\DELL\\.nuget\\packages\\system.text.regularexpressions\\4.3.0\\system.text.regularexpressions.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
-    "C:\\Users\\DELL\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],

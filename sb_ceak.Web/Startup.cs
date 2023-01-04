@@ -31,7 +31,7 @@ namespace sb_ceak.Web
 
             services.AddDbContext<SB_CEAKContexto>(option => 
                                                     option.UseLazyLoadingProxies()
-                                                    .UseSqlServer(connectionString,
+                                                    .UseNpgsql(connectionString,
                                                             m => m.MigrationsAssembly("sb_ceak.Repositorio")));
 
 
