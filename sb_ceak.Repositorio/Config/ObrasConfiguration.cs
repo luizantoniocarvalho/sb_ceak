@@ -34,35 +34,42 @@ namespace sb_ceak.Repositorio.Config
 
             builder
                 .Property(o => o.ds_Divulgadora_Obra)
-                .HasColumnType("character(30)");
+                .HasColumnType("character(30)")
+                .IsRequired(false);
 
             builder
                 .Property(o => o.ds_Edicao_Obra)
-                .HasColumnType("character(30)");
+                .HasColumnType("character(30)")
+                .IsRequired(false);
 
             builder
                 .Property(o => o.ds_Mes_Ano_Publicacao_Obra)
-                .HasColumnType("character(30)");
+                .HasColumnType("character(30)")
+                .IsRequired(false);
 
             builder
                 .Property(o => o.ds_Ano_Publicacao_Obra)
-                .HasColumnType("character(30)");
+                .HasColumnType("character(30)")
+                .IsRequired(false);
 
             builder
                 .Property(o => o.ds_Editora_Obra)
-                .HasColumnType("character(50)");
-                
+                .HasColumnType("character(50)")
+                .IsRequired(false);
+
             builder
                 .Property(o => o.qtd_Pagina_Obra)
                 .HasColumnType("integer");
 
             builder
                 .Property(o => o.ds_CDU_Obra)
-                .HasColumnType("character(30)");
+                .HasColumnType("character(30)")
+                .IsRequired(false);
 
             builder
                 .Property(o => o.ds_CDD_Obra)
-                .HasColumnType("character(30)");
+                .HasColumnType("character(30)")
+                .IsRequired(false);
                 
             builder
                 .Property(o => o.dt_Data_Cadastro_Obra)

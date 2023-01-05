@@ -4,38 +4,38 @@ using sb_ceak.Dominio.Entidade;
 
 namespace sb_ceak.Repositorio.Config
 {
-    public class TipoAutoresConfiguration : IEntityTypeConfiguration<TipoAutores>
+    public class TipoAcervosConfiguration : IEntityTypeConfiguration<TipoAcervos>
     {
-        public void Configure(EntityTypeBuilder<TipoAutores> builder)
+        public void Configure(EntityTypeBuilder<TipoAcervos> builder)
         {
             //Chave primária.
-            builder.HasKey(tp => tp.tipo_autor_id);
+            builder.HasKey(ta => ta.tipo_acervo_id);
 
             //Builder utiliza o padrão Fluent.
             builder
-                .Property(tp => tp.ds_Nome_Tipo_Autor)
+                .Property(ta => ta.ds_Nome_Tipo_Acervo)
                 .IsRequired()
                 .HasColumnType("character(100)");
 
             builder
-                .Property(tp => tp.in_Situacao_Registro)
+                .Property(ta => ta.in_Situacao_Registro)
                 .IsRequired()
                 .HasColumnType("boolean");
 
             builder
-                .Property(tp => tp.criou_Registro_id)
+                .Property(ta => ta.criou_Registro_id)
                 .HasColumnType("integer");
 
             builder
-                .Property(tp => tp.dt_Data_Criacao)
+                .Property(ta => ta.dt_Data_Criacao)
                 .HasColumnType("timestamp with time zone");
 
             builder
-                .Property(tp => tp.alterou_Registro_id)
+                .Property(ta => ta.alterou_Registro_id)
                 .HasColumnType("integer");
 
             builder
-                .Property(tp => tp.dt_Data_Alteracao)
+                .Property(ta => ta.dt_Data_Alteracao)
                 .HasColumnType("timestamp with time zone");
 
         }

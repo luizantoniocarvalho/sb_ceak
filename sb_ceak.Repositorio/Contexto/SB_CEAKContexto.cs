@@ -20,6 +20,8 @@ namespace sb_ceak.Repositorio.Contexto
         public DbSet<TipoAutores> TipoAutor                         { get; set; }
         public DbSet<TipoObras> TipoObra                            { get; set; }
         public DbSet<TipoTelefones> TipoTelefone                    { get; set; }
+        public DbSet<TipoAcervos> TipoAcervo                        { get; set; }
+
 
         public SB_CEAKContexto(DbContextOptions options) : base(options)
         {
@@ -43,6 +45,42 @@ namespace sb_ceak.Repositorio.Contexto
             modelBuilder.ApplyConfiguration(new TipoAutoresConfiguration());
             modelBuilder.ApplyConfiguration(new TipoObrasConfiguration());
             modelBuilder.ApplyConfiguration(new TipoTelefonesConfiguration());
+            modelBuilder.ApplyConfiguration(new TipoAcervosConfiguration());
+
+            modelBuilder.Entity<TipoAutores>().HasData(
+                new TipoAutores()
+                {
+                    tipo_autor_id =1,
+                    ds_Nome_Tipo_Autor = "ESPIRITUAL",
+                    in_Situacao_Registro = true,
+                    criou_Registro_id = 1,
+                    dt_Data_Criacao = System.DateTime.Today
+                },
+                new TipoAutores()
+                {
+                    tipo_autor_id = 2,
+                    ds_Nome_Tipo_Autor = "INTUÍDO",
+                    in_Situacao_Registro = true,
+                    criou_Registro_id = 1,
+                    dt_Data_Criacao = System.DateTime.Today
+                },
+                new TipoAutores()
+                {
+                    tipo_autor_id = 3,
+                    ds_Nome_Tipo_Autor = "OUTRO",
+                    in_Situacao_Registro = true,
+                    criou_Registro_id =1,
+                    dt_Data_Criacao = System.DateTime.Today
+                },
+                new TipoAutores()
+                {
+                    tipo_autor_id = 4,
+                    ds_Nome_Tipo_Autor = "PSCICOGRÁFICO",
+                    in_Situacao_Registro = true,
+                    criou_Registro_id = 1,
+                    dt_Data_Criacao = System.DateTime.Today
+                }
+            );
 
             base.OnModelCreating(modelBuilder);
         }
