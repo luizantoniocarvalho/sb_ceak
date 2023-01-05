@@ -7,41 +7,44 @@ namespace sb_ceak.Repositorio.Repositorios
 {
     public class BaseRepositorio<TEntity> : IBaseRepositorio<TEntity> where TEntity : class
     {
-        private readonly SB_CEAKContexto _sb_CEAKContexo;
-
+        protected  readonly SB_CEAKContexto SB_CEAKContexo;
+        
         public BaseRepositorio(SB_CEAKContexto sb_CEAKContexto)
         {
-            _sb_CEAKContexo = sb_CEAKContexto; 
+            SB_CEAKContexo = sb_CEAKContexto; 
         }
 
         public void Adicionar(TEntity entity)
         {
-            _sb_CEAKContexo.Set<TEntity>().Add(entity);
+            SB_CEAKContexo.Set<TEntity>().Add(entity);
+            SB_CEAKContexo.SaveChanges();
         }
 
         public void Atualizar(TEntity entity)
         {
-            throw new System.NotImplementedException();
+            SB_CEAKContexo.Set<TEntity>().Update(entity);
+            SB_CEAKContexo.SaveChanges();
         }
 
         public TEntity ObterPorId(int id)
         {
-            throw new System.NotImplementedException();
+            return SB_CEAKContexo.Set<TEntity>().Find(id);
         }
 
         public IEnumerable<TEntity> ObterTodos()
         {
-            return _sb_CEAKContexo.Set<TEntity>().ToList();
+            return SB_CEAKContexo.Set<TEntity>().ToList();
         }
 
         public void Remover(TEntity entity)
         {
-            throw new System.NotImplementedException();
+            SB_CEAKContexo.Remove(entity);
+            SB_CEAKContexo.SaveChanges();
         }
 
         public void Dispose()
         {
-            throw new System.NotImplementedException();
+            SB_CEAKContexo.Dispose();
         }
     }
 }
