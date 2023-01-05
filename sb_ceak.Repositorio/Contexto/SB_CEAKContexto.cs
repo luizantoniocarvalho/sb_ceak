@@ -49,63 +49,33 @@ namespace sb_ceak.Repositorio.Contexto
             modelBuilder.ApplyConfiguration(new TipoAcervosConfiguration());
             
 
-            modelBuilder.Entity<TipoAcervos>().HasData(
-                new TipoAcervos()
+            modelBuilder.Entity<TipoTelefones>().HasData(
+                new TipoTelefones()
                 {
-                    tipo_acervo_id =1,
-                    ds_Nome_Tipo_Acervo = "CD VÍDEO",
-                    ds_Prazo_Dia_Acervo = "15",
+                    tipo_telefone_id =1,
+                    ds_Tipo_Telefone = "CELULAR",
                     in_Situacao_Registro = true,
                     criou_Registro_id = 1,
                     dt_Data_Criacao = System.DateTime.Today
                 },
-                new TipoAcervos()
+                new TipoTelefones()
                 {
-                    tipo_acervo_id = 2,
-                    ds_Nome_Tipo_Acervo = "DVD",
-                    ds_Prazo_Dia_Acervo = "15",
+                    tipo_telefone_id = 2,
+                    ds_Tipo_Telefone = "COMERCIAL",
                     in_Situacao_Registro = true,
                     criou_Registro_id = 1,
                     dt_Data_Criacao = System.DateTime.Today
                 },
-                new TipoAcervos()
+                new TipoTelefones()
                 {
-                    tipo_acervo_id = 3,
-                    ds_Nome_Tipo_Acervo = "FITA K7",
-                    ds_Prazo_Dia_Acervo = "15",
+                    tipo_telefone_id = 3,
+                    ds_Tipo_Telefone = "RESIDENCIAL",
                     in_Situacao_Registro = true,
                     criou_Registro_id =1,
                     dt_Data_Criacao = System.DateTime.Today
-                },
-                new TipoAcervos()
-                {
-                    tipo_acervo_id = 4,
-                    ds_Nome_Tipo_Acervo = "LIVRO",
-                    ds_Prazo_Dia_Acervo = "30",
-                    in_Situacao_Registro = true,
-                    criou_Registro_id = 1,
-                    dt_Data_Criacao = System.DateTime.Today
-                },
-                new TipoAcervos()
-                {
-                    tipo_acervo_id = 5,
-                    ds_Nome_Tipo_Acervo = "OUTRO",
-                    ds_Prazo_Dia_Acervo = "15",
-                    in_Situacao_Registro = true,
-                    criou_Registro_id = 1,
-                    dt_Data_Criacao = System.DateTime.Today
-                },
-                new TipoAcervos()
-                {
-                    tipo_acervo_id = 6,
-                    ds_Nome_Tipo_Acervo = "PERIÓDICO",
-                    ds_Prazo_Dia_Acervo = "30",
-                    in_Situacao_Registro = true,
-                    criou_Registro_id = 1,
-                    dt_Data_Criacao = System.DateTime.Today
                 }
             );
-             
+            
             base.OnModelCreating(modelBuilder);
         }
     }
