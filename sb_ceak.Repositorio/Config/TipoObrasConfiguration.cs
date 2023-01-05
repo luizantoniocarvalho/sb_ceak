@@ -18,11 +18,6 @@ namespace sb_ceak.Repositorio.Config
                 .HasColumnType("character(100)");
 
             builder
-                .Property(to => to.ds_Prazo_Dia_Obra)
-                .IsRequired()
-                .HasColumnType("character(2)");
-
-            builder
                 .Property(to => to.in_Situacao_Registro)
                 .IsRequired()
                 .HasColumnType("boolean");

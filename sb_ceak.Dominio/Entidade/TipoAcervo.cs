@@ -6,6 +6,7 @@ namespace sb_ceak.Dominio.Entidade
     {
         public int tipo_acervo_id                    { get; set; }
         public string ds_Nome_Tipo_Acervo            { get; set; }
+        public string ds_Prazo_Dia_Acervo            { get; set; }
         public bool in_Situacao_Registro             { get; set; }
         public int criou_Registro_id                 { get; set; }
         public DateTime dt_Data_Criacao              { get; set; }
@@ -18,6 +19,10 @@ namespace sb_ceak.Dominio.Entidade
 
             if (string.IsNullOrEmpty(ds_Nome_Tipo_Acervo))
                 AdicionarMensagemValidacao("Nome do Tipo de Acervo é campo obrigatório.");
+
+            if (string.IsNullOrEmpty(ds_Prazo_Dia_Acervo))
+                AdicionarMensagemValidacao("O Prazo do Tipo de Acervo é campo obrigatório.");
+
         }
 
     }

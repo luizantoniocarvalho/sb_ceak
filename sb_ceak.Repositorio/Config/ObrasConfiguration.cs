@@ -23,6 +23,11 @@ namespace sb_ceak.Repositorio.Config
                 .HasColumnType("integer");
 
             builder
+                .Property(o => o.tipo_acervo_id)
+                .IsRequired()
+                .HasColumnType("integer");
+
+            builder
                 .Property(o => o.ds_Nome_Obra)
                 .IsRequired()
                 .HasColumnType("character(200)");
