@@ -15,8 +15,7 @@ namespace sb_ceak.Repositorio.Config
             builder
                 .Property(op => op.ds_Nome_Operacao)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(100);
+                .HasColumnType("character(100)");
 
             builder
                 .Property(op => op.in_Situacao_Registro)

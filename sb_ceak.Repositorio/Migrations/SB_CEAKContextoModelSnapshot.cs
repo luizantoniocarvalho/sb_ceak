@@ -32,8 +32,7 @@ namespace sb_ceak.Repositorio.Migrations
 
                     b.Property<string>("ds_Nome_Autor")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<DateTime>("dt_Data_Alteracao")
                         .HasColumnType("timestamp with time zone");
@@ -93,8 +92,7 @@ namespace sb_ceak.Repositorio.Migrations
 
                     b.Property<string>("ds_Nome_Funcao")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(100);
+                        .HasColumnType("character(100)");
 
                     b.Property<DateTime>("dt_Data_Alteracao")
                         .HasColumnType("timestamp with time zone");
@@ -121,8 +119,7 @@ namespace sb_ceak.Repositorio.Migrations
 
                     b.Property<string>("ds_Log_Realizado")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<DateTime>("dt_Data_Log")
                         .HasColumnType("timestamp with time zone");
@@ -150,44 +147,35 @@ namespace sb_ceak.Repositorio.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("ds_Ano_Publicacao_Obra")
-                        .HasColumnType("character")
-                        .HasMaxLength(30);
+                        .HasColumnType("character(30)");
 
                     b.Property<string>("ds_CDD_Obra")
-                        .HasColumnType("character")
-                        .HasMaxLength(30);
+                        .HasColumnType("character(30)");
 
                     b.Property<string>("ds_CDU_Obra")
-                        .HasColumnType("character")
-                        .HasMaxLength(30);
+                        .HasColumnType("character(30)");
 
                     b.Property<string>("ds_Codigo_Obra")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(30);
+                        .HasColumnType("character(30)");
 
                     b.Property<string>("ds_Divulgadora_Obra")
-                        .HasColumnType("character")
-                        .HasMaxLength(30);
+                        .HasColumnType("character(30)");
 
                     b.Property<string>("ds_Duracao_Obra");
 
                     b.Property<string>("ds_Edicao_Obra")
-                        .HasColumnType("character")
-                        .HasMaxLength(30);
+                        .HasColumnType("character(30)");
 
                     b.Property<string>("ds_Editora_Obra")
-                        .HasColumnType("character")
-                        .HasMaxLength(50);
+                        .HasColumnType("character(50)");
 
                     b.Property<string>("ds_Mes_Ano_Publicacao_Obra")
-                        .HasColumnType("character")
-                        .HasMaxLength(30);
+                        .HasColumnType("character(30)");
 
                     b.Property<string>("ds_Nome_Obra")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<DateTime>("dt_Data_Alteracao")
                         .HasColumnType("timestamp with time zone");
@@ -200,9 +188,6 @@ namespace sb_ceak.Repositorio.Migrations
 
                     b.Property<bool>("in_Situacao_Registro")
                         .HasColumnType("boolean");
-
-                    b.Property<int>("prazo_id")
-                        .HasColumnType("integer");
 
                     b.Property<int>("qtd_Pagina_Obra")
                         .HasColumnType("integer");
@@ -228,8 +213,7 @@ namespace sb_ceak.Repositorio.Migrations
 
                     b.Property<string>("ds_Nome_Operacao")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(100);
+                        .HasColumnType("character(100)");
 
                     b.Property<DateTime>("dt_Data_Alteracao")
                         .HasColumnType("timestamp with time zone");
@@ -262,43 +246,35 @@ namespace sb_ceak.Repositorio.Migrations
 
                     b.Property<string>("ds_CEP_Parametro")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(10);
+                        .HasColumnType("character(10)");
 
                     b.Property<string>("ds_CNPJ_Parametro")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(20);
+                        .HasColumnType("character(20)");
 
                     b.Property<string>("ds_Email_Parametro")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<string>("ds_Endereco_Parametro")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<string>("ds_Nome_Parametro")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<string>("ds_Presidente_Parametro")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(100);
+                        .HasColumnType("character(100)");
 
                     b.Property<string>("ds_Site_Parametro")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<string>("ds_Tesoureiro_Parametro")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(100);
+                        .HasColumnType("character(100)");
 
                     b.Property<DateTime>("dt_Data_Alteracao")
                         .HasColumnType("timestamp with time zone");
@@ -333,8 +309,7 @@ namespace sb_ceak.Repositorio.Migrations
 
                     b.Property<string>("ds_Nome_Perfil")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(100);
+                        .HasColumnType("character(100)");
 
                     b.Property<DateTime>("dt_Data_Alteracao")
                         .HasColumnType("timestamp with time zone");
@@ -363,28 +338,23 @@ namespace sb_ceak.Repositorio.Migrations
 
                     b.Property<string>("ds_CEP_Pessoa")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(10);
+                        .HasColumnType("character(10)");
 
                     b.Property<string>("ds_Email_Pessoa")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<string>("ds_Endereco_Pessoa")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<string>("ds_Nome_Pessoa")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(200);
+                        .HasColumnType("character(200)");
 
                     b.Property<string>("ds_Senha_Pessoa")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(10);
+                        .HasColumnType("character(10)");
 
                     b.Property<DateTime>("dt_Data_Alteracao")
                         .HasColumnType("timestamp with time zone");
@@ -444,13 +414,11 @@ namespace sb_ceak.Repositorio.Migrations
 
                     b.Property<string>("ds_DDD_Telefone")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(10);
+                        .HasColumnType("character(10)");
 
                     b.Property<string>("ds_Numero_Telefone")
                         .IsRequired()
-                        .HasColumnType("character")
-                        .HasMaxLength(10);
+                        .HasColumnType("character(10)");
 
                     b.Property<DateTime>("dt_Data_Alteracao")
                         .HasColumnType("timestamp with time zone");
@@ -467,6 +435,97 @@ namespace sb_ceak.Repositorio.Migrations
                     b.HasKey("telefone_id");
 
                     b.ToTable("Telefone");
+                });
+
+            modelBuilder.Entity("sb_ceak.Dominio.Entidade.TipoAutores", b =>
+                {
+                    b.Property<int>("tipo_autor_id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("alterou_Registro_id")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("criou_Registro_id")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("ds_Nome_Tipo_Autor")
+                        .IsRequired()
+                        .HasColumnType("character(100)");
+
+                    b.Property<DateTime>("dt_Data_Alteracao")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("dt_Data_Criacao")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("in_Situacao_Registro")
+                        .HasColumnType("boolean");
+
+                    b.HasKey("tipo_autor_id");
+
+                    b.ToTable("TipoAutor");
+                });
+
+            modelBuilder.Entity("sb_ceak.Dominio.Entidade.TipoObras", b =>
+                {
+                    b.Property<int>("tipo_obra_id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("alterou_Registro_id")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("criou_Registro_id")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("ds_Nome_Tipo_Obra")
+                        .IsRequired()
+                        .HasColumnType("character(100)");
+
+                    b.Property<string>("ds_Prazo_Dia_Obra")
+                        .IsRequired()
+                        .HasColumnType("character(2)");
+
+                    b.Property<DateTime>("dt_Data_Alteracao")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("dt_Data_Criacao")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("in_Situacao_Registro")
+                        .HasColumnType("boolean");
+
+                    b.HasKey("tipo_obra_id");
+
+                    b.ToTable("TipoObra");
+                });
+
+            modelBuilder.Entity("sb_ceak.Dominio.Entidade.TipoTelefones", b =>
+                {
+                    b.Property<int>("tipo_telefone_id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("alterou_Registro_id")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("criou_Registro_id")
+                        .HasColumnType("integer");
+
+                    b.Property<string>("ds_Tipo_Telefone")
+                        .IsRequired()
+                        .HasColumnType("character(30)");
+
+                    b.Property<DateTime>("dt_Data_Alteracao")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("dt_Data_Criacao")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("in_Situacao_Registro")
+                        .HasColumnType("boolean");
+
+                    b.HasKey("tipo_telefone_id");
+
+                    b.ToTable("TipoTelefone");
                 });
 
             modelBuilder.Entity("sb_ceak.Dominio.Entidade.Funcoes", b =>

@@ -25,8 +25,7 @@ namespace sb_ceak.Repositorio.Config
             builder
                 .Property(l => l.ds_Log_Realizado)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(200);
+                .HasColumnType("character(200)");
 
             //builder.Property(a => a.Pessoas)
         }

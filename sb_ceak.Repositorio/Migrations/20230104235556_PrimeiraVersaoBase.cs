@@ -15,7 +15,7 @@ namespace sb_ceak.Repositorio.Migrations
                     autor_id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     tipo_autor_id = table.Column<int>(type: "integer", nullable: false),
-                    ds_Nome_Autor = table.Column<string>(type: "character", maxLength: 200, nullable: false),
+                    ds_Nome_Autor = table.Column<string>(type: "character(200)", nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
                     criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
                     dt_Data_Criacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
@@ -53,7 +53,7 @@ namespace sb_ceak.Repositorio.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     pessoa_id = table.Column<int>(type: "integer", nullable: false),
                     dt_Data_Log = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    ds_Log_Realizado = table.Column<string>(type: "character", maxLength: 200, nullable: false)
+                    ds_Log_Realizado = table.Column<string>(type: "character(200)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -68,18 +68,17 @@ namespace sb_ceak.Repositorio.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     tipo_obra_id = table.Column<int>(type: "integer", nullable: false),
                     autor_id = table.Column<int>(type: "integer", nullable: false),
-                    prazo_id = table.Column<int>(type: "integer", nullable: false),
-                    ds_Nome_Obra = table.Column<string>(type: "character", maxLength: 200, nullable: false),
-                    ds_Codigo_Obra = table.Column<string>(type: "character", maxLength: 30, nullable: false),
+                    ds_Nome_Obra = table.Column<string>(type: "character(200)", nullable: false),
+                    ds_Codigo_Obra = table.Column<string>(type: "character(30)", nullable: false),
                     ds_Duracao_Obra = table.Column<string>(nullable: true),
-                    ds_Divulgadora_Obra = table.Column<string>(type: "character", maxLength: 30, nullable: true),
-                    ds_Edicao_Obra = table.Column<string>(type: "character", maxLength: 30, nullable: true),
-                    ds_Mes_Ano_Publicacao_Obra = table.Column<string>(type: "character", maxLength: 30, nullable: true),
-                    ds_Ano_Publicacao_Obra = table.Column<string>(type: "character", maxLength: 30, nullable: true),
-                    ds_Editora_Obra = table.Column<string>(type: "character", maxLength: 50, nullable: true),
+                    ds_Divulgadora_Obra = table.Column<string>(type: "character(30)", nullable: true),
+                    ds_Edicao_Obra = table.Column<string>(type: "character(30)", nullable: true),
+                    ds_Mes_Ano_Publicacao_Obra = table.Column<string>(type: "character(30)", nullable: true),
+                    ds_Ano_Publicacao_Obra = table.Column<string>(type: "character(30)", nullable: true),
+                    ds_Editora_Obra = table.Column<string>(type: "character(50)", nullable: true),
                     qtd_Pagina_Obra = table.Column<int>(type: "integer", nullable: false),
-                    ds_CDU_Obra = table.Column<string>(type: "character", maxLength: 30, nullable: true),
-                    ds_CDD_Obra = table.Column<string>(type: "character", maxLength: 30, nullable: true),
+                    ds_CDU_Obra = table.Column<string>(type: "character(30)", nullable: true),
+                    ds_CDD_Obra = table.Column<string>(type: "character(30)", nullable: true),
                     dt_Data_Cadastro_Obra = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
                     criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
@@ -99,15 +98,15 @@ namespace sb_ceak.Repositorio.Migrations
                     parametro_id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     telefone_id = table.Column<int>(type: "integer", nullable: false),
-                    ds_Nome_Parametro = table.Column<string>(type: "character", maxLength: 200, nullable: false),
-                    ds_CNPJ_Parametro = table.Column<string>(type: "character", maxLength: 20, nullable: false),
-                    ds_Endereco_Parametro = table.Column<string>(type: "character", maxLength: 200, nullable: false),
-                    ds_CEP_Parametro = table.Column<string>(type: "character", maxLength: 10, nullable: false),
+                    ds_Nome_Parametro = table.Column<string>(type: "character(200)", nullable: false),
+                    ds_CNPJ_Parametro = table.Column<string>(type: "character(20)", nullable: false),
+                    ds_Endereco_Parametro = table.Column<string>(type: "character(200)", nullable: false),
+                    ds_CEP_Parametro = table.Column<string>(type: "character(10)", nullable: false),
                     uf_id = table.Column<int>(type: "integer", nullable: false),
-                    ds_Site_Parametro = table.Column<string>(type: "character", maxLength: 200, nullable: false),
-                    ds_Email_Parametro = table.Column<string>(type: "character", maxLength: 200, nullable: false),
-                    ds_Presidente_Parametro = table.Column<string>(type: "character", maxLength: 100, nullable: false),
-                    ds_Tesoureiro_Parametro = table.Column<string>(type: "character", maxLength: 100, nullable: false),
+                    ds_Site_Parametro = table.Column<string>(type: "character(200)", nullable: false),
+                    ds_Email_Parametro = table.Column<string>(type: "character(200)", nullable: false),
+                    ds_Presidente_Parametro = table.Column<string>(type: "character(100)", nullable: false),
+                    ds_Tesoureiro_Parametro = table.Column<string>(type: "character(100)", nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
                     criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
                     dt_Data_Criacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
@@ -125,7 +124,7 @@ namespace sb_ceak.Repositorio.Migrations
                 {
                     perfil_id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
-                    ds_Nome_Perfil = table.Column<string>(type: "character", maxLength: 100, nullable: false),
+                    ds_Nome_Perfil = table.Column<string>(type: "character(100)", nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
                     criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
                     dt_Data_Criacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
@@ -145,12 +144,12 @@ namespace sb_ceak.Repositorio.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     perfil_id = table.Column<int>(type: "integer", nullable: false),
                     telefone_id = table.Column<int>(type: "integer", nullable: false),
-                    ds_Nome_Pessoa = table.Column<string>(type: "character", maxLength: 200, nullable: false),
-                    ds_Endereco_Pessoa = table.Column<string>(type: "character", maxLength: 200, nullable: false),
-                    ds_CEP_Pessoa = table.Column<string>(type: "character", maxLength: 10, nullable: false),
+                    ds_Nome_Pessoa = table.Column<string>(type: "character(200)", nullable: false),
+                    ds_Endereco_Pessoa = table.Column<string>(type: "character(200)", nullable: false),
+                    ds_CEP_Pessoa = table.Column<string>(type: "character(10)", nullable: false),
                     uf_id = table.Column<int>(type: "integer", nullable: false),
-                    ds_Email_Pessoa = table.Column<string>(type: "character", maxLength: 200, nullable: false),
-                    ds_Senha_Pessoa = table.Column<string>(type: "character", maxLength: 10, nullable: false),
+                    ds_Email_Pessoa = table.Column<string>(type: "character(200)", nullable: false),
+                    ds_Senha_Pessoa = table.Column<string>(type: "character(10)", nullable: false),
                     dt_Data_Cadastro_Pessoa = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
                     criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
@@ -185,8 +184,8 @@ namespace sb_ceak.Repositorio.Migrations
                     telefone_id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
                     tipo_telefone_id = table.Column<int>(type: "integer", nullable: false),
-                    ds_DDD_Telefone = table.Column<string>(type: "character", maxLength: 10, nullable: false),
-                    ds_Numero_Telefone = table.Column<string>(type: "character", maxLength: 10, nullable: false),
+                    ds_DDD_Telefone = table.Column<string>(type: "character(10)", nullable: false),
+                    ds_Numero_Telefone = table.Column<string>(type: "character(10)", nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
                     criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
                     dt_Data_Criacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
@@ -199,12 +198,67 @@ namespace sb_ceak.Repositorio.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "TipoAutor",
+                columns: table => new
+                {
+                    tipo_autor_id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
+                    ds_Nome_Tipo_Autor = table.Column<string>(type: "character(100)", nullable: false),
+                    in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
+                    criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
+                    dt_Data_Criacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    alterou_Registro_id = table.Column<int>(type: "integer", nullable: false),
+                    dt_Data_Alteracao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TipoAutor", x => x.tipo_autor_id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TipoObra",
+                columns: table => new
+                {
+                    tipo_obra_id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
+                    ds_Nome_Tipo_Obra = table.Column<string>(type: "character(100)", nullable: false),
+                    ds_Prazo_Dia_Obra = table.Column<string>(type: "character(2)", nullable: false),
+                    in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
+                    criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
+                    dt_Data_Criacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    alterou_Registro_id = table.Column<int>(type: "integer", nullable: false),
+                    dt_Data_Alteracao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TipoObra", x => x.tipo_obra_id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "TipoTelefone",
+                columns: table => new
+                {
+                    tipo_telefone_id = table.Column<int>(nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
+                    ds_Tipo_Telefone = table.Column<string>(type: "character(30)", nullable: false),
+                    in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
+                    criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
+                    dt_Data_Criacao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    alterou_Registro_id = table.Column<int>(type: "integer", nullable: false),
+                    dt_Data_Alteracao = table.Column<DateTime>(type: "timestamp with time zone", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_TipoTelefone", x => x.tipo_telefone_id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Funcao",
                 columns: table => new
                 {
                     funcao_id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
-                    ds_Nome_Funcao = table.Column<string>(type: "character", maxLength: 100, nullable: false),
+                    ds_Nome_Funcao = table.Column<string>(type: "character(100)", nullable: false),
                     perfil_id = table.Column<int>(nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
                     criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
@@ -229,7 +283,7 @@ namespace sb_ceak.Repositorio.Migrations
                 {
                     operacao_id = table.Column<int>(nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
-                    ds_Nome_Operacao = table.Column<string>(type: "character", maxLength: 100, nullable: false),
+                    ds_Nome_Operacao = table.Column<string>(type: "character(100)", nullable: false),
                     funcao_id = table.Column<int>(nullable: false),
                     in_Situacao_Registro = table.Column<bool>(type: "boolean", nullable: false),
                     criou_Registro_id = table.Column<int>(type: "integer", nullable: false),
@@ -287,6 +341,15 @@ namespace sb_ceak.Repositorio.Migrations
 
             migrationBuilder.DropTable(
                 name: "Telefone");
+
+            migrationBuilder.DropTable(
+                name: "TipoAutor");
+
+            migrationBuilder.DropTable(
+                name: "TipoObra");
+
+            migrationBuilder.DropTable(
+                name: "TipoTelefone");
 
             migrationBuilder.DropTable(
                 name: "Funcao");

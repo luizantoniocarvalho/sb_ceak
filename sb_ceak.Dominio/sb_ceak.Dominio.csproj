@@ -4,4 +4,12 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Entidade\Funcoes.cs~RFed41482.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Enumerações\" />
+  </ItemGroup>
+
 </Project>

@@ -2,12 +2,10 @@
 
 namespace sb_ceak.Dominio.Entidade
 {
-    public class Telefones : Entidades
+    public class TipoTelefones : Entidades
     {
-        public int telefone_id                  { get; set; }
         public int tipo_telefone_id             { get; set; }
-        public string ds_DDD_Telefone           { get; set; }
-        public string ds_Numero_Telefone        { get; set; }
+        public string ds_Tipo_Telefone          { get; set; }
         public bool in_Situacao_Registro        { get; set; }
         public int criou_Registro_id            { get; set; }
         public DateTime dt_Data_Criacao         { get; set; }
@@ -18,8 +16,8 @@ namespace sb_ceak.Dominio.Entidade
         {
             LimparMensagemValidacao();
 
-            if (string.IsNullOrEmpty(ds_Numero_Telefone))
-                AdicionarMensagemValidacao("Número de Telefone é campo obrigatório.");
+            if (string.IsNullOrEmpty(ds_Tipo_Telefone))
+                AdicionarMensagemValidacao("O Tipo de Telefone é campo obrigatório.");
         }
     }
 }

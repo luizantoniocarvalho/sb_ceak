@@ -23,61 +23,47 @@ namespace sb_ceak.Repositorio.Config
                 .HasColumnType("integer");
 
             builder
-                .Property(o => o.prazo_id)
-                .IsRequired()
-                .HasColumnType("integer");
-
-            builder
                 .Property(o => o.ds_Nome_Obra)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(200);
+                .HasColumnType("character(200)");
 
             builder
                 .Property(o => o.ds_Codigo_Obra)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(30);
+                .HasColumnType("character(30)");
 
             builder
                 .Property(o => o.ds_Divulgadora_Obra)
-                .HasColumnType("character")
-                .HasMaxLength(30);
+                .HasColumnType("character(30)");
 
             builder
                 .Property(o => o.ds_Edicao_Obra)
-                .HasColumnType("character")
-                .HasMaxLength(30);
+                .HasColumnType("character(30)");
 
             builder
                 .Property(o => o.ds_Mes_Ano_Publicacao_Obra)
-                .HasColumnType("character")
-                .HasMaxLength(30);
+                .HasColumnType("character(30)");
 
             builder
                 .Property(o => o.ds_Ano_Publicacao_Obra)
-                .HasColumnType("character")
-                .HasMaxLength(30);
+                .HasColumnType("character(30)");
 
             builder
                 .Property(o => o.ds_Editora_Obra)
-                .HasColumnType("character")
-                .HasMaxLength(50);
-
+                .HasColumnType("character(50)");
+                
             builder
                 .Property(o => o.qtd_Pagina_Obra)
                 .HasColumnType("integer");
 
             builder
                 .Property(o => o.ds_CDU_Obra)
-                .HasColumnType("character")
-                .HasMaxLength(30);
+                .HasColumnType("character(30)");
 
             builder
                 .Property(o => o.ds_CDD_Obra)
-                .HasColumnType("character")
-                .HasMaxLength(30);
-
+                .HasColumnType("character(30)");
+                
             builder
                 .Property(o => o.dt_Data_Cadastro_Obra)
                 .IsRequired()

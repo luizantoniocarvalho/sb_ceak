@@ -25,20 +25,17 @@ namespace sb_ceak.Repositorio.Config
             builder
                 .Property(ps => ps.ds_Nome_Pessoa)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(200);
+                .HasColumnType("character(200)");
 
             builder
                 .Property(ps => ps.ds_Endereco_Pessoa)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(200);
+                .HasColumnType("character(200)");
 
             builder
                 .Property(ps => ps.ds_CEP_Pessoa)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(10);
+                .HasColumnType("character(10)");
 
             builder
                 .Property(ps => ps.uf_id)
@@ -48,14 +45,12 @@ namespace sb_ceak.Repositorio.Config
             builder
                 .Property(ps => ps.ds_Email_Pessoa)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(200);
+                .HasColumnType("character(200)");
 
             builder
                 .Property(ps => ps.ds_Senha_Pessoa)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(10);
+                .HasColumnType("character(10)");
 
             builder
                 .Property(ps => ps.dt_Data_Cadastro_Pessoa)

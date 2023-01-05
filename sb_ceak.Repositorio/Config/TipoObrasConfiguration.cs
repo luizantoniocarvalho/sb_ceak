@@ -4,44 +4,46 @@ using sb_ceak.Dominio.Entidade;
 
 namespace sb_ceak.Repositorio.Config
 {
-    public class AutoresConfiguration : IEntityTypeConfiguration<Autores>
+    public class TipoObrasConfiguration : IEntityTypeConfiguration<TipoObras>
     {
-        public void Configure(EntityTypeBuilder<Autores> builder)
+        public void Configure(EntityTypeBuilder<TipoObras> builder)
         {
             //Chave primária.
-            builder.HasKey(a => a.autor_id);
+            builder.HasKey(to => to.tipo_obra_id);
 
             //Builder utiliza o padrão Fluent.
             builder
-                .Property(a => a.ds_Nome_Autor)
+                .Property(to => to.ds_Nome_Tipo_Obra)
                 .IsRequired()
-                .HasColumnType("character(200)");
+                .HasColumnType("character(100)");
 
             builder
-                .Property(a => a.tipo_autor_id)
+                .Property(to => to.ds_Prazo_Dia_Obra)
                 .IsRequired()
-                .HasColumnType("integer");
+                .HasColumnType("character(2)");
 
             builder
-                .Property(a => a.in_Situacao_Registro)
+                .Property(to => to.in_Situacao_Registro)
                 .IsRequired()
                 .HasColumnType("boolean");
 
             builder
-                .Property(a => a.criou_Registro_id)
+                .Property(to => to.criou_Registro_id)
                 .HasColumnType("integer");
 
             builder
-                .Property(a => a.dt_Data_Criacao)
+                .Property(to => to.dt_Data_Criacao)
                 .HasColumnType("timestamp with time zone");
 
             builder
-                .Property(a => a.alterou_Registro_id)
+                .Property(to => to.alterou_Registro_id)
                 .HasColumnType("integer");
 
             builder
-                .Property(a => a.dt_Data_Alteracao)
+                .Property(to => to.dt_Data_Alteracao)
                 .HasColumnType("timestamp with time zone");
+
+            //builder.Property(a => a.Pessoas)
         }
     }
 }

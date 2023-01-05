@@ -17,6 +17,9 @@ namespace sb_ceak.Repositorio.Contexto
         public DbSet<Pessoas> Pessoa                                { get; set; }
         public DbSet<Reservas> Reserva                              { get; set; }
         public DbSet<Telefones> Telefone                            { get; set; }
+        public DbSet<TipoAutores> TipoAutor                         { get; set; }
+        public DbSet<TipoObras> TipoObra                            { get; set; }
+        public DbSet<TipoTelefones> TipoTelefone                    { get; set; }
 
         public SB_CEAKContexto(DbContextOptions options) : base(options)
         {
@@ -37,6 +40,9 @@ namespace sb_ceak.Repositorio.Contexto
             modelBuilder.ApplyConfiguration(new PessoasConfiguration());
             modelBuilder.ApplyConfiguration(new ReservasConfiguration());
             modelBuilder.ApplyConfiguration(new TelefonesConfiguration());
+            modelBuilder.ApplyConfiguration(new TipoAutoresConfiguration());
+            modelBuilder.ApplyConfiguration(new TipoObrasConfiguration());
+            modelBuilder.ApplyConfiguration(new TipoTelefonesConfiguration());
 
             base.OnModelCreating(modelBuilder);
         }

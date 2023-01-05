@@ -1,5 +1,4 @@
-﻿using sb_ceak.Dominio.Associação;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace sb_ceak.Dominio.Entidade

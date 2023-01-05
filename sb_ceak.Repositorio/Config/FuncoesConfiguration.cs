@@ -15,8 +15,7 @@ namespace sb_ceak.Repositorio.Config
             builder
                 .Property(f => f.ds_Nome_Funcao)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(100);
+                .HasColumnType("character(100)");
 
             builder
                 .Property(f => f.in_Situacao_Registro)

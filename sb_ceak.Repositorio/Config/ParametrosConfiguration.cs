@@ -20,26 +20,22 @@ namespace sb_ceak.Repositorio.Config
             builder
                 .Property(p => p.ds_Nome_Parametro)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(200);
+                .HasColumnType("character(200)");
 
             builder
                 .Property(p => p.ds_CNPJ_Parametro)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(20);
+                .HasColumnType("character(20)");
 
             builder
                 .Property(p => p.ds_Endereco_Parametro)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(200);
+                .HasColumnType("character(200)");
 
             builder
                 .Property(p => p.ds_CEP_Parametro)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(10);
+                .HasColumnType("character(10)");
 
             builder
                 .Property(p => p.uf_id)
@@ -49,26 +45,22 @@ namespace sb_ceak.Repositorio.Config
             builder
                 .Property(p => p.ds_Site_Parametro)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(200);
+                .HasColumnType("character(200)");
 
             builder
                 .Property(p => p.ds_Email_Parametro)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(200);
+                .HasColumnType("character(200)");
 
             builder
                 .Property(p => p.ds_Presidente_Parametro)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(100);
+                .HasColumnType("character(100)");
 
             builder
                 .Property(p => p.ds_Tesoureiro_Parametro)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(100);
+                .HasColumnType("character(100)");
 
             builder
                 .Property(p => p.in_Situacao_Registro)

@@ -20,14 +20,12 @@ namespace sb_ceak.Repositorio.Config
             builder
                 .Property(t => t.ds_DDD_Telefone)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(10);
+                .HasColumnType("character(10)");
 
             builder
                 .Property(t => t.ds_Numero_Telefone)
                 .IsRequired()
-                .HasColumnType("character")
-                .HasMaxLength(10);
+                .HasColumnType("character(10)");
 
             builder
                 .Property(t => t.in_Situacao_Registro)

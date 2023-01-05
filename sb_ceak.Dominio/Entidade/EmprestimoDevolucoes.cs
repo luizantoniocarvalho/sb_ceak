@@ -1,5 +1,4 @@
-﻿using sb_ceak.Dominio.Enumerações;
-using System;
+﻿using System;
 
 namespace sb_ceak.Dominio.Entidade
 {
@@ -12,16 +11,6 @@ namespace sb_ceak.Dominio.Entidade
         public DateTime dt_Data_Emprestimo      { get; set; }
         public DateTime dt_Prevista_Devolucao   { get; set; }
         public DateTime dt_Data_Devolucao       { get; set; }
-
-        public bool TipoLivro
-        {
-            get { return tipo_obra_id == (int)TipoObras.Livros; }
-        }
-
-        public bool TipoDVD
-        {
-            get { return tipo_obra_id == (int)TipoObras.DVD; }
-        }
 
         public override void Validate()
         {
