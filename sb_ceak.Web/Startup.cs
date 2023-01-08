@@ -6,7 +6,9 @@ using Microsoft.AspNetCore.SpaServices.AngularCli;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using sb_ceak.Dominio.Repositorios;
 using sb_ceak.Repositorio.Contexto;
+using sb_ceak.Repositorio.Repositorios;
 
 namespace sb_ceak.Web
 {
@@ -34,6 +36,7 @@ namespace sb_ceak.Web
                                                     .UseNpgsql(connectionString,
                                                             m => m.MigrationsAssembly("sb_ceak.Repositorio")));
 
+            services.AddScoped<IAutorRepositorio, AutorRepositorio>();
 
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
@@ -76,7 +79,7 @@ namespace sb_ceak.Web
 
                 if (env.IsDevelopment())
                 {
-                    //spa.UseAngularCliServer(npmScript: "start");
+                    spa.UseAngularCliServer(npmScript: "start");
                     spa.UseProxyToSpaDevelopmentServer("http://localhost:4200/");
                 }
             });
