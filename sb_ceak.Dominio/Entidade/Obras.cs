@@ -7,6 +7,9 @@ namespace sb_ceak.Dominio.Entidade
         public int obra_id                          { get; set; }
         public int tipo_obra_id                     { get; set; }
         public int autor_id                         { get; set; }
+        public int autor_sec_id                     { get; set; }
+        public  int autor_ps1_id                    { get; set; }
+        public int autor_ps2_id                     { get; set; }
         public int tipo_acervo_id                   { get; set; }
         public string ds_Nome_Obra                  { get; set; }
         public string ds_Codigo_Obra                { get; set; }

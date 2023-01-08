@@ -23,6 +23,21 @@ namespace sb_ceak.Repositorio.Config
                 .HasColumnType("integer");
 
             builder
+                .Property(o => o.autor_sec_id)
+                .IsRequired()
+                .HasColumnType("integer");
+
+            builder
+                .Property(o => o.autor_ps1_id)
+                .IsRequired()
+                .HasColumnType("integer");
+
+            builder
+                .Property(o => o.autor_ps2_id)
+                .IsRequired()
+                .HasColumnType("integer");
+
+            builder
                 .Property(o => o.tipo_acervo_id)
                 .IsRequired()
                 .HasColumnType("integer");
